@@ -1,0 +1,212 @@
+                @font-face {
+                    font-family: myFirstFont;
+                    src: url(sansation_bold.woff);
+                    font-weight: bold;
+                    font-family: myFirstFont;
+                }
+                
+                * {
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                
+                .containers {
+                    padding: 30px 0px 0px 0px;
+                    width: 90%;
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    align-items: center;
+                    border-bottom: 1px solid rgba(85, 85, 85, 0.2);
+                }
+                
+                .logo img {
+                    width: 170px;
+                }
+                /* Menu center */
+                
+                .menubar {
+                    position: relative;
+                }
+                
+                .menubar .menubar-flex {
+                    display: flex;
+                }
+                
+                .menubar ul li {
+                    list-style: none;
+                }
+                
+                .dropbtn {
+                    background-color: transparent;
+                    border: none;
+                    color: rgba(37, 37, 37, 0.7);
+                    transition: all ease 0.3s;
+                }
+                
+                .dropbtn:hover {
+                    color: rgb(255, 11, 92);
+                    transition: all ease 0.3s;
+                }
+                
+                .menubar ul li a {
+                    text-decoration: none;
+                    padding: 0 15px;
+                    display: block;
+                    font-size: 15px;
+                    color: rgba(37, 37, 37, 0.7);
+                    transition: all ease 0.3s;
+                }
+                
+                .menubar ul li a:hover {
+                    color: rgb(255, 11, 92);
+                    transition: all ease 0.3s;
+                }
+                /* end menu center */
+                /* menu login and registration */
+                
+                .menu-lr ul {
+                    display: flex;
+                }
+                
+                .menu-lr ul li {
+                    list-style: none;
+                }
+                
+                .menu-lr ul li a {
+                    text-decoration: none;
+                    padding: 0 15px;
+                    display: block;
+                    font-size: 15px;
+                    color: rgba(37, 37, 37, 0.7);
+                    transition: all ease 0.3s;
+                }
+                
+                .menu-lr ul li a i {
+                    padding-right: 4px;
+                }
+                
+                .menu-lr ul li a:hover {
+                    color: rgb(48, 48, 48);
+                }
+                /* drop dow menu */
+                
+                .drop_menu {
+                    display: none;
+                    position: absolute;
+                    padding: 10px;
+                    background-color: rgb(255, 255, 255);
+                    border-bottom: 2px solid navajowhite;
+                    box-shadow: 0px 10px 10px rgb(250, 247, 244);
+                }
+                
+                .drop_menu ul li a {
+                    margin: 5px;
+                    display: inline-table;
+                }
+                
+                .show {
+                    display: inline-block;
+                }
+                
+                .respon-menu {
+                    position: relative;
+                }
+                
+                .show-drop-menu {
+                    display: none;
+                    top: 10px;
+                    right: 25px;
+                    position: absolute;
+                    background-color: transparent;
+                    border: none;
+                }
+                
+                .show-drop-menu i {
+                    color: rgb(218, 218, 218);
+                    font-size: 20px;
+                }
+                
+                .respon-menu {
+                    position: absolute;
+                    right: -100%;
+                    top: -100%;
+                    transform: translateX(-100%);
+                    transition: all ease 0.5s;
+                }
+                
+                .respon-menu ul {
+                    /* position: absolute;
+                    right: -100%;
+                    top: -100%;
+                    transition: all ease 0.5s; */
+                }
+                
+                @media only screen and (max-width: 700px) {
+                    .containers {
+                        padding: 30px 0px 10px 0px;
+                        width: 90%;
+                        margin: 0 auto;
+                        display: grid;
+                        grid-template-columns: auto;
+                        align-items: center;
+                        border-bottom: 1px solid rgba(85, 85, 85, 0.2);
+                        transition: all ease 0.5s;
+                    }
+                    #showMenuRespon {
+                        display: none;
+                    }
+                    .show-drop-menu {
+                        display: block;
+                    }
+                    .logo {
+                        text-align: center;
+                    }
+                    .logo img {
+                        width: 100px;
+                        text-align: center;
+                        transition: all ease 0.5s;
+                    }
+                    .respon-menu {
+                        position: relative;
+                        display: flex;
+                        background-color: rgb(15, 15, 15);
+                        padding: 20px;
+                        top: 0;
+                        left: 0;
+                        transform: translateX(0);
+                        transition: all linear 0.5s;
+                    }
+                    /*show menu */
+                    .respon-menu ul {
+                        position: relative;
+                        display: block;
+                    }
+                    .respon-menu ul li {
+                        list-style: none;
+                        position: relative;
+                    }
+                    .respon-menu ul li a {
+                        padding: 5px;
+                        color: rgb(190, 190, 190);
+                        display: block;
+                        text-decoration: none;
+                        transition: all ease 0.3s;
+                    }
+                    .respon-menu ul li a:hover {
+                        color: white;
+                        transition: all ease 0.3s;
+                    }
+                    .respon-menu ul li ul {
+                        position: relative;
+                        padding: 0px 40px;
+                        display: block;
+                    }
+                    .respon-menu ul li ul li a {
+                        color: blue;
+                    }
+                }
+                /* end dropdow menu */
+                /* show drop menubtn */
