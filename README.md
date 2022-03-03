@@ -1,2 +1,3 @@
 # Project_Myseft
-https://github.com/Doanftpaptech/Project_Myseft/html/index.html
+https://doanftpaptech.github.io/Project_Myseft/html/index.html
+
